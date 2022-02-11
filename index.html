@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Know your ward's candidate</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- <base href="https://tnsec.tn.nic.in/nomination_view_urban2021/corporation_councillor_details.php?dcode=Mjk%3D&amp;corpcode=NTgw&amp;ward_name=V2FyZCAx&amp;post_code=Ng%3D%3D&amp;ward_no=MQ%3D%3D"> 
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> 
+  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/animate.css" rel="stylesheet"> 
+  <link href="css/prettyPhoto.css" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet"> 
+  <link href="css/custom.css" rel="stylesheet"> 
+  <link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">  -->
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	<style>
+		#txtDate, #txtDate2 {
+		  background-color: #fafafa;
+		  border:0;
+		  box-shadow:0 0 4px rgba(0,0,0,0.3);
+		  transition: .3s box-shadow;
+		}
+		#txtDate:hover, txtDate2 {
+		  box-shadow:0 0 4px rgba(0,0,0,0.5);
+		}
+		
+		.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+	</style>
+</head>
+
+<body>
+	<div class="px-4 py-4 my-4 text-center"> <!--<img src='' alt="Banner" style="width: 90%; height: auto; padding: 2rem;" /> </div>
+ <div class="container-fluid navbar-fixed header"> 
+    <div class="row"> 
+     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center logo-left"> 
+      <img src="https://tnsec.tn.nic.in/nomination_view_urban2021/images/logo/tnsec.gif" alt="govt"> 
+     </div> 
+     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center d-block header-text"> 
+      <b>Tamilnadu State Election Commission</b> 
+     </div> 
+    </div> 
+   </div>  -->
+  </div> 
+<br/>  
+<br/>  
+		<div class="container">
+			<p class="lead mb-4 text-center" style="font-size:18px;font-family: Arial, Helvetica, sans-serif;"> Know your ward's candidate and their affidavit </p>
+			<!-- <p class="lead mb-4 text-center" style="font-size:18px;font-family: Arial, Helvetica, sans-serif;"> </p> -->
+			<hr/>
+			<div>
+				<!-- <h4 class="lead mb-4 text-center" style="font-size:18px;font-family: Arial, Helvetica, sans-serif;">  &nbsp; </h4>
+				 --><!-- <h5> <input type="number" style="padding: 4px 4px 4px 4px" placeholder="Ward Number" id = "txtDate" min="1" max="100" /> </h5> --> 
+			
+				<center> 
+				<form name="wardForm">
+				<select class="lead mb-3 text-center" style= "padding: 5px;" name="ward" onchange="goToPage(this.form.ward)">
+					<option value="none" selected disabled hidden>Choose your ward number</option>        
+					<option value="partials/1.html">Ward 1</a></option>
+					<option value="partials/2.html">Ward 2</a></option>
+				</select> </center>
+				
+				<iframe id="iframe" name="iframe" align="top" height="600px" width="95%"  align="middle" style="border:none;"></iframe>
+				</form>
+		</div>
+		
+		
+		
+</div>
+
+<script type="text/javascript">
+    function goToPage(mySelect) {
+	
+        PageIndex2 = mySelect.selectedIndex;
+        if ( mySelect.options[PageIndex2].value != "none") {
+    		frames['iframe'].location.href = mySelect.options[PageIndex2].value;
+			
+
+        }
+	}
+         
+         //-->
+         
+      </script>
+</script>
+					
+</body>
+</html> 
